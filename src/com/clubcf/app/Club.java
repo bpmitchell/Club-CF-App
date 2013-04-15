@@ -22,6 +22,8 @@ package com.clubcf.app;
 import android.os.Bundle;
 import org.apache.cordova.*;
 
+import com.clubcf.app.R;
+
 public class Club extends DroidGap
 {
     @Override
@@ -29,7 +31,8 @@ public class Club extends DroidGap
     {
         super.onCreate(savedInstanceState);
         // Set by <content src="index.html" /> in config.xml
-        super.loadUrl(Config.getStartUrl());
+        super.setIntegerProperty("splashscreen", R.drawable.splash);
+        super.loadUrl(Config.getStartUrl(), 10000);
         //super.loadUrl("file:///android_asset/www/index.html")
     }
 }

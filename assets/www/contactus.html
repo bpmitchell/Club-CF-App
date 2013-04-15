@@ -4,30 +4,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <script type="text/javascript" src="cordova-2.4.0.js"></script>
+        <script type="text/javascript" src="cordova-2.6.0.js"></script>
         <link rel="stylesheet" href="css/jquery.mobile-1.3.0-rc.1.min.css" />
         <script src="js/jquery-1.8.3.min.js"></script>
         <script src="js/jquery.mobile-1.3.0-rc.1.min.js"></script>
         <script src="js/childbrowser.js"></script>
-        <link rel="stylesheet" href="css/bartender.css">
         <title>Contact Us</title>
-         <script type="text/javascript" charset="utf-8">
-
-    // Wait for Cordova to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
-
-    // Cordova is ready
-    //
-    function onDeviceReady() {
-         var ref = window.open('http://apache.org', '_blank', 'location=yes');
-         ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
-         ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
-         ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
-         ref.addEventListener('exit', function(event) { alert(event.type); });
-    }
-
-    </script>
     </head> 
     <body onLoad="onBodyLoad();">
 <div data-role="page">
@@ -62,17 +44,17 @@
 	<strong>Fill out the contact form below to reach a staff member.</strong>
 	</p>
      </div>
-       <div class="ui-footer ui-bar-a ui-footer-fixed ui-fixed-inline">
-					<div class="ui-navbar comboSprite">
-					<ul class="apple-navbar-ui ui-grid-d">
-						<li class="ui-block-a"><a href="index.html" data-transition="none" data-icon="news" class="ui-btn"><span class="ui-btn-inner"><span class="ui-btn-text">News</span><span class="ui-icon"></span></span></a></li>
-						<li class="ui-block-b"><a href="sociallounge.html" data-transition="none" data-icon="social" class="ui-btn"><span class="ui-btn-inner"><span class="ui-btn-text">Social Lounge</span><span class="ui-icon"></span></span></a></li>
-						<li class="ui-block-c"><a href="videos.html" data-transition="none" data-icon="videos" class="ui-btn"><span class="ui-btn-inner"><span class="ui-btn-text">Videos</span><span class="ui-icon"></span></span></a></li>
-						<li class="ui-block-d"><a href="clubcf.html" data-transition="none" data-icon="clubcf" class="ui-btn"><span class="ui-btn-inner"><span class="ui-btn-text">Club CF</span><span class="ui-icon"></span></span></a></li>
-						<li class="ui-block-e"><a href="contactus.html" data-transition="none" data-icon="contactus" class="ui-btn"><span class="ui-btn-inner"><span class="ui-btn-text">Contact Us</span><span class="ui-icon"></span></span></a></li>
-					</ul>
-					</div>
-				</div>
+             <div data-role="footer" data-position="fixed" class="nav-glyphish-example">
+      <div data-role="navbar" class="nav-glyphish-example" data-grid="d">
+       <ul>
+        <li><a href="index.html" id="news" data-transition="none" data-icon="custom">News</a></li>
+        <li><a href="sociallounge.html" id="social" data-transition="none" data-icon="custom">Social Lounge</a></li>
+        <li><a href="videos.html" id="videos" data-transition="none" data-icon="custom">Videos</a></li>
+        <li><a href="clubcf.html" id="club" data-transition="none" data-icon="custom">Club Info</a></li>
+        <li><a href="#" id="contact" data-transition="none" data-icon="custom" class="ui-state-persist">Contact Us</a></li>
+       </ul>
+       </div>
+       </div>
  </div> 
     </body>
 </html>

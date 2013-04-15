@@ -78,7 +78,6 @@ $("#mainPage").live("pagebeforeshow", function(event,data) {
 $("#contentPage").live("pageshow", function(prepage) {
     //Set the title
     var contentHTML = "";
-    contentHTML += '<div class="bg-txt-s">';
     contentHTML += '<h3>'+ entries[selectedEntry].title + '</h3>';
     contentHTML += '<h4>' + entries[selectedEntry].pubDate + '</h4>';
     contentHTML += entries[selectedEntry].description;
