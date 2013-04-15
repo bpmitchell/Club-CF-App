@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-
-<cordova>
+    <widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.clubcf.app"
+        version   = "1.0.0">
     <!--
     access elements control the Android whitelist.
     Domains are assumed blocked unless set otherwise
@@ -42,10 +42,6 @@
     <plugin name="ChildBrowser" value="com.phonegap.plugins.childBrowser.ChildBrowser"/>
     <plugin name="org.apache.cordova.facebook.Connect" value="org.apache.cordova.facebook.ConnectPlugin" />
     </plugins>
-    <widget xmlns     = "http://www.w3.org/ns/widgets"
-        xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.clubcf.app"
-        version   = "1.0.0">
 
     <name>Club CF</name>
 
@@ -87,4 +83,3 @@ Club Coasterfusion, the world's cheapest coaster club. Access News, Videos, and 
     <gap:splash src="res/screen/ios/screen-ipad-portrait.png"      gap:platform="ios"     width="768" height="1024" />
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
 </widget>
-</cordova>
