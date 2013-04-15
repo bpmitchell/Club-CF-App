@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <script type="text/javascript" src="cordova-2.6.0.js"></script>
+        <link rel="stylesheet" href="css/jquery.mobile-1.3.0-rc.1.min.css" />
+        <script src="js/jquery-1.8.3.min.js"></script>
+        <script src="js/custom-scripting.js"></script>
+        <script src="js/jquery.mobile-1.3.0-rc.1.min.js"></script>
+        <script src="js/childbrowser.js"></script>
+        <script src="js/rssfeed.js"></script>
+        <title>Club CF</title>
+        <style type="text/css">
+        .nav-glyphish-example .ui-btn .ui-btn-inner { padding-top: 40px !important; }
+        .nav-glyphish-example .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+        #news .ui-icon { background:  url(img/rssupdated.png) 50% 50% no-repeat; background-size: 24px 24px; }
+        #social .ui-icon { background:  url(img/socialupdated.png) 50% 50% no-repeat; background-size: 24px 24px;  }
+        #videos .ui-icon { background:  url(img/videos.png) 50% 50% no-repeat;  background-size: 24px 24px; }
+        #club .ui-icon { background:  url(img/club.png) 50% 50% no-repeat;  background-size: 24px 24px; }
+        #contact .ui-icon { background:  url(img/contact.png) 50% 50% no-repeat;  background-size: 24px 24px; }
+        </style>
+    </head> 
+    <body onLoad="onBodyLoad();">
+<div data-role="page" id="mainPage">
+      <div data-role="header" data-position="fixed">
+         <img src="img/cftopheader.png" class="ui-btn-left" />
+     <h1></h1>
+     <h1></h1>
+     </div> 
+     <div data-role="content">
+     <ul id="linksList" data-role="listview" data-inset="true"></ul>
+     <div id="status"></div>
+     </div>     
+      <div data-role="footer" data-position="fixed" class="nav-glyphish-example">
+      <div data-role="navbar" class="nav-glyphish-example" data-grid="d">
+       <ul>
+        <li><a href="#" id="news" data-transition="none" data-icon="custom" class="ui-state-persist">News</a></li>
+        <li><a href="sociallounge.html" id="social" data-transition="none" data-icon="custom">Social Lounge</a></li>
+        <li><a href="videos.html" id="videos" data-transition="none" data-icon="custom">Videos</a></li>
+        <li><a href="clubcf.html" id="club" data-transition="none" data-icon="custom">Club Info</a></li>
+        <li><a href="contactus.html" id="contact" data-transition="none" data-icon="custom">Contact Us</a></li>
+       </ul>
+       </div>
+       </div>
+        </div>
+        <div data-role="page" id="contentPage">
+
+    <div data-role="header" data-position="fixed">
+        <img src="img/cftopheader.png" class="ui-btn-left" />
+        <a href="#mainPage" data-theme="d" data-role="button" class="ui-btn-right" data-icon="arrow-l" data-iconpos="left" data-inline="true">Back</a>
+        <h1></h1>
+        <h1></h1>
+    </div>
+
+    <div data-role="content" id="entryText">
+    </div>
+    
+    <div data-role="footer" data-id="foo1" data-position="fixed">
+    <h1></h1>
+    <h1></h1>
+    </div>
+    
+    <script src="js/custom-scripting.js"></script>
+        
+</div>
+    </body>
+</html>
