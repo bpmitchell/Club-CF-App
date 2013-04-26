@@ -9,11 +9,11 @@
     <name>Hello World</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Club CF App brings the latest for Club Coasterfusion directly to your mobile device. Browse news, videos, connect on social networks.
     </description>
 
     <author href="http://www.coasterfusion.com" email="info@coasterfusion.com">
-        PhoneGap Team
+        Club Coasterfusion Team
     </author>
 
     <!--
