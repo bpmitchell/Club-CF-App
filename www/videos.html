@@ -9,34 +9,27 @@
         <script src="js/jquery-1.8.3.min.js"></script>
         <script src="js/jquery.mobile-1.3.0-rc.1.min.js"></script>
         <script src="js/childbrowser.js"></script>
+        <link rel="stylesheet" href="css/youtube.css">
+        <script src="js/youtube.js"></script>
         <title>Videos</title>
+        <style type="text/css">
+        .nav-glyphish-example .ui-btn .ui-btn-inner { padding-top: 40px !important; }
+        .nav-glyphish-example .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+        #news .ui-icon { background:  url(img/rss.png) 50% 50% no-repeat; background-size: 42px 42px; }
+        #social .ui-icon { background:  url(img/social.png) 50% 50% no-repeat; background-size: 30px 30px;  }
+        #videos .ui-icon { background:  url(img/videos.png) 50% 50% no-repeat;  background-size: 32px 32px; }
+        #club .ui-icon { background:  url(img/clubcf.png) 50% 50% no-repeat;  background-size: 32px 32px; }
+        #contact .ui-icon { background:  url(img/contact.png) 50% 50% no-repeat;  background-size: 32px 32px; }
+        </style>
     </head> 
     <body onLoad="onBodyLoad();">
 <div data-role="page">
       <div data-role="header" data-position="fixed">
          <img src="img/cftopheader.png" class="ui-btn-left" />
-      <div style="position:absolute; left:305px; top:10px;">
-      <a href="#" onclick="window.plugins.childBrowser.showWebPage('https://www.facebook.com/CoasterFusion');"><img src="img/facebooklogo.png" width="30" height="30" border="0"></a>
-                    </div>
-            <div style="position:absolute; left:285px; top:45px;">
-                <font size="-2">Facebook</font>
-            </div>
-            <div style="position:absolute; left:410px; top:10px;">
-            <a href="#" onclick="window.plugins.childBrowser.showWebPage('https://twitter.com/coasterfusion');"><img src="img/twitterlogo.png" width="30" height="30" border="0"></a>
-                    </div>
-            <div style="position:absolute; left:400px; top:45px;">
-                <font size="-2">Twitter</font>
-            </div>
-            <div style="position:absolute; left:513px; top:10px;">
-            <a href="#" onclick="window.plugins.childBrowser.showWebPage('http://www.youtube.com/user/coasterfusion');"><img src="img/youtubelogo.png" width="30" height="30" border="0"></a>
-                    </div>
-            <div style="position:absolute; left:495px; top:45px;">
-                <font size="-2">YouTube</font>
-            </div>
      <h1></h1>
      <h1></h1>
      </div> 
-    <div data-role="content"> 
+    <div data-role="content">
      </div>
           <div data-role="footer" data-position="fixed" class="nav-glyphish-example">
       <div data-role="navbar" class="nav-glyphish-example" data-grid="d">
@@ -49,6 +42,6 @@
        </ul>
        </div>
        </div>
- </div> 
+ </div>         
     </body>
 </html>

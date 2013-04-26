@@ -15,34 +15,45 @@
 <div data-role="page">
       <div data-role="header" data-position="fixed">
          <img src="img/cftopheader.png" class="ui-btn-left" />
-      <div style="position:absolute; left:305px; top:10px;">
-      <a href="#" onclick="window.plugins.childBrowser.showWebPage('https://www.facebook.com/CoasterFusion');"><img src="img/facebooklogo.png" width="30" height="30" border="0"></a>
-                    </div>
-            <div style="position:absolute; left:285px; top:45px;">
-                <font size="-2">Facebook</font>
-            </div>
-            <div style="position:absolute; left:410px; top:10px;">
-            <a href="#" onclick="window.plugins.childBrowser.showWebPage('https://twitter.com/coasterfusion');"><img src="img/twitterlogo.png" width="30" height="30" border="0"></a>
-                    </div>
-            <div style="position:absolute; left:400px; top:45px;">
-                <font size="-2">Twitter</font>
-            </div>
-            <div style="position:absolute; left:513px; top:10px;">
-            <a href="#" onclick="window.plugins.childBrowser.showWebPage('http://www.youtube.com/user/coasterfusion');"><img src="img/youtubelogo.png" width="30" height="30" border="0"></a>
-                    </div>
-            <div style="position:absolute; left:495px; top:45px;">
-                <font size="-2">YouTube</font>
-            </div>
      <h1></h1>
      <h1></h1>
      </div> 
     <div data-role="content"> 
-     <p style="text-indent: 20px">
+    <p>
 	<strong>Club CoasterFusion values your feedback.</strong>
 	</p>
-	<p style="text-indent: 20px"> 
+	<p>
 	<strong>Fill out the contact form below to reach a staff member.</strong>
 	</p>
+	<br>
+	<div class="contact-thankyou" style="display: none;">
+			Thank you.  Your message has been sent.  We will get back to you as soon as we can.
+		</div>
+		<div class="contact-form">
+			<p class="mandatory"><strong><font color="red">*</font> Required</strong></p>
+			<br>
+			<div data-role="fieldcontain" class="text-field">
+				<label for="firstname">First Name<font color="red">*</font>:</label>
+				<input type="text" name="firstname" value="" placeholder="" class="required" id="firstname" />
+			</div>
+			<br>
+			<div data-role="fieldcontain" class="text-field">
+				<label for="surname">Last Name:</label>
+				<input type="text" name="surname" value="" placeholder="" id="surname" />
+			</div>
+			<br>
+			<div data-role="fieldcontain" class="text-field">
+				<label for="email">Email Address<font color="red">*</font>:</label>
+				<input type="email" name="email" value="" placeholder="" class="required" id="email"  />
+			</div>
+			<br>
+			<div data-role="fieldcontain">
+				<label for="message">Message<font color="red">*</font>:</label>
+				<textarea name="message" id="message" placeholder="" class="required"></textarea>
+			</div>
+			<br>
+			<div class="send"><a href="javascript:;" data-role="button" data-theme="a" data-iconpos="right" id="send-feedback">send feedback</a></div>
+		</div><!-- //.contact-form -->
      </div>
              <div data-role="footer" data-position="fixed" class="nav-glyphish-example">
       <div data-role="navbar" class="nav-glyphish-example" data-grid="d">

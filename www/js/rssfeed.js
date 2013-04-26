@@ -1,3 +1,10 @@
+$.ajaxSetup({
+            error:function(x,e,errorThrown) {
+            console.log(x.getStatusCode());
+            $("#status").prepend("Error!");
+            }
+            });
+            
 //EDIT THESE LINES
 //Title of the blog
 var TITLE = "";
@@ -15,7 +22,7 @@ $(".contentLink").live("click", function() {
 function renderEntries(entries) {
 var s = '';
 $.each(entries, function(i, v) {
-s += '<li><a href="#contentPage" class="contentLink" data-entryid="'+i+'">' + '<div class="navtit"><h2>' + v.title + '</h2></div>' + '<div class="small">'+ v.pubDate + '</div>' + '</a></li>'
+s += '<li><img src="img/cfrsslogo.png" height="48" width="158" border="0"><a href="#contentPage" class="contentLink" data-entryid="'+i+'">' + '<div class="navtit"><h2>' + v.title + '</h2></div>' + '<div class="small">'+ v.pubDate + '</div>' + '</a></li>'
 ;});
 $("#linksList").html(s);
 $("#linksList").listview("refresh");        
@@ -32,21 +39,15 @@ $("#mainPage").live("pageinit", function() {
             var xml = $(res);
             var items = xml.find("item");
             $.each(items, function(i, v) {
-            
-            var ray = $(v).find("media:thumbnail");
-                console.log(ray);
                 
                 entry = { 
-                    title:$(v).find("title").text(), 
+                    title:$(v).find("title").text(),
                     link:$(v).find("link").text(), 
                     pubDate:$(v).find("pubDate").text(),
-                    ray:$(v).find("media:thumbnail").text(),
+                    img:$(v).find("enclosure").attr("url"),
                     description:$.trim($(v).find("description").text())
-                   
                     };
-                    
                 entries.push(entry);
-                
             });
             //store entries
             localStorage["entries"] = JSON.stringify(entries);
@@ -81,5 +82,6 @@ $("#contentPage").live("pageshow", function(prepage) {
     contentHTML += '<h3>'+ entries[selectedEntry].title + '</h3>';
     contentHTML += '<h4>' + entries[selectedEntry].pubDate + '</h4>';
     contentHTML += entries[selectedEntry].description;
+    contentHTML += '<p/><a href="#" onclick=window.plugins.childBrowser.showWebPage("'+entries[selectedEntry].link + '")>Read Entry on Site</a>';	
     $("#entryText",this).html(contentHTML);
 });
