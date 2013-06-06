@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!--
+#
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+# 
+# http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+#
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <script type="text/javascript" src="cordova-2.6.0.js"></script>
+        <script src="js/jquery-1.8.3.min.js"></script>
+        <script src="js/custom-scripting.js"></script>
+        <script src="js/jquery.mobile-1.3.0-rc.1.min.js"></script>
+        <script src="js/childbrowser.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/index.js"></script>
+        <link rel="stylesheet" href="css/jquery.mobile-1.3.0-rc.1.min.css" />
+        <link rel="stylesheet" href="css/index.css">
+        <title>News</title>
+    </head> 
+    <body onLoad="onBodyLoad();">
+    
+    <!-- page -->
+<div data-role="page" id="mainPage">
+
+     <!-- header -->
+      <div data-role="header" class="header">
+         <img src="img/cftopheader.png" class="ui-btn-left" />
+         <h1></h1>
+         <h1></h1>
+     </div> 
+     <!-- /header -->
+     
+     <!-- content -->
+     <div data-role="content" class="content">
+     <ul id="linksList" data-role="listview" data-inset="true"></ul>
+     <div id="status"></div>
+     </div>
+     <!-- /content -->
+     
+     <!-- footer -->
+      <div data-role="footer" class="footer">
+      <!-- navbar -->
+      <div data-role="navbar" class="cffooter" data-grid="d">
+       <ul>
+        <li><a href="#" id="news" data-transition="none" data-icon="custom" class="ui-state-persist">News</a></li>
+        <li><a href="#club" id="clubcf" data-transition="none" data-icon="custom">Club Info</a></li>
+        <li><a href="#aboutus" id="about" data-transition="none" data-icon="custom">About</a></li>
+        <li><a href="#contactus" id="contact" data-transition="none" data-icon="custom">Contact Us</a></li>
+        <li><a href="#morepage" id="more" data-transition="none" data-icon="custom">More</a></li>
+       </ul>
+       </div><!-- /navbar -->
+       </div><!-- /footer -->
+       
+       </div><!-- /page -->
+       
+       <!-- page -->
+        <div data-role="page" id="contentPage">
+
+    <!-- header -->
+    <div data-role="header" data-position="fixed">
+        <img src="img/cftopheader.png" class="ui-btn-left" />
+        <a href="#mainPage" data-theme="d" data-role="button" class="ui-btn-right" data-icon="arrow-l" data-iconpos="left" data-inline="true">Back</a>
+        <h1></h1>
+        <h1></h1>
+    </div>
+    <!-- header -->
+    
+    <!-- content -->
+    <div data-role="content" class="content" id="entryText">
+    </div>
+    <!-- /content -->
+    
+    <!-- footer -->
+    <div data-role="footer" data-id="foo1" class="footer">
+    <h1></h1>
+    </div>
+    <!-- /footer -->
+    
+    <!-- begin JS files -->
+    <script src="js/custom-scripting.js"></script>
+    <script src="js/rssfeed.js"></script>
+    <!-- /end JS files -->
+            
+</div><!-- /page -->
+
+     <!-- page -->
+     <div id="club" data-role="page">
+     
+     <!-- Header -->
+     <div id="club" data-role="header" class="header">
+     <img src="img/cftopheader.png" class="ui-btn-left" />
+         <h1></h1>
+         <h1></h1>
+     </div>
+     <!-- /header -->
+     
+     <!-- content -->
+     <div data-role="content" class="content">
+      <p style="text-indent: 10px"><span style="text-decoration:underline;"><strong>Club CoasterFusion Information:</strong></span></p>
+    <div data-role="collapsible-set" data-theme="c" data-content-theme="d" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+    <div data-role="collapsible">
+        <h3>About the Club</h3>
+        <p>Club CoasterFusion was established in November of 2009 with a few key priorities in mind.
+           The first and most important priority is you! We want to make everyone feel welcome when they
+           register and become part of Club CoasterFusion. Whether your a seasoned roller coaster veteran
+           or a newcomer to the scene, everyone is equal! Our number two priority is of course the price 
+           one pays to become part of our club! We want to make sure you get the best out of your membership,
+           so why charge astronomical membership fees. Why not save some money!?
+        </p>
+    </div>
+    <div data-role="collapsible">
+        <h3>Membership Cost</h3>
+        <p>Club CoasterFusion is the world's cheapest roller coaster enthusiast organization.
+         We offer three different types of memberships that can be purchased by 
+         anyone from anywhere on the planet:</p>
+        <p>
+        <span style="color: DarkOrange;"><strong>United States Memberships</strong></span>: <strong>$20.00</strong> (Plus $5 each additional member, up to 4 allowed)
+        </p>
+        <p>
+        <span style="color: DarkOrange;"><strong>Canada and Mexico Memberships</strong></span>: <strong>$25.00</strong> (Plus $5 each additional member, up to 4 allowed)
+        </p>
+        <p>
+        <span style="color: DarkOrange;"><strong>International Memberships</strong></span>: <strong>$30.00</strong> (Plus $5 each additional member, up to 4 allowed)
+        </p>
+        <p>
+        When making your purchase you will have the option to add up to four additional members.
+        You will act as the primary membership holder. Therefore all important club information 
+        and etc will be transmitted through you.
+        </p>
+    </div>
+    <div data-role="collapsible">
+        <h3>Club Benefits</h3>
+        <ul>
+        <li><p>Personal welcome packet containing your laminated membership card(s) and other goodies!</p></li>
+        <li><p>Discounts on general admission and season passes at over <b>65</b> parks worldwide!</p></li>
+        <li><p>10% discount at any LaQuinta Inn Nationwide</p></li>
+        <li><p>Add a Club CoasterFusion T-shirt for only <b>$5</b> along with your purchase of a membership!</p></li>
+        <li><p>Invitations to a dozen roller coaster enthusiast events nationwide, including CoasterMainia at Cedar Point!</p></li>
+        <li><p><b>25% OFF</b> first purchase of Club CoasterFusion Merchandise!</p></li>
+        <li><p>Personal Club CoasterFusion forum signature!</p></li>
+        <li><p>Personal Coaster Counter courtesy of <span style="color: DarkOrange;"><strong>Attractionseeker</strong></span>!</p></li>
+        <li><p>Exclusive access to Club CoasterFusion Member Forms!</p></li>
+        <li><p>Private messaging system to other Club Members!</p></li>
+        <li><p>Ability to upload and display photo albums of your theme park adventures!</p></li>
+        <li><p>Access to Club CoasterFusion merchandise!</p></li>
+        <li><p>Personal and business site advertisement opportunities!</p></li>
+        </ul>
+    </div>
+    <div data-role="collapsible">
+    <h3>Code of Conduct</h3>
+    <p>
+    Club CoasterFusion has partnered with the parks listed for discounts and events. 
+    However, Club CoasterFusion is not responsible for those persons who decide to 
+    act out in ways that may harm themselves or others. Therefore, by registering for 
+    Club CoasterFusion you agree to the following Codes of Conduct:
+    </p>
+    <p><span style="color: DarkOrange;"><strong>- 1 -</strong></span> It is my responsibility to follow posted and verbal
+    safety rules at all times at all theme parks partnered with Club CoasterFusion without exception, including <span style="color: DarkOrange;">(including but not limited to)</span>
+    not attempting to circumvent the safety features of the ride.
+    </p>
+    <p><span style="color: DarkOrange;"><strong>- 2 -</strong></span> I understand that some rider behaviors are so obviously unsafe that posting them
+    is not necessary, and so I agree that I will use caution and conservative judgement in riding.
+    </p>
+    <p><span style="color: DarkOrange;"><strong>- 3 -</strong></span> I understand that failure to follow these Codes of Conduct may result in me and my group being escorted
+    from the park and or banned from the respected theme park and Club CoasterFusion.
+    </p>
+    <p><span style="color: DarkOrange;"><strong>- 4 -</strong></span> I understand that my Club CoasterFusion Membership will expire on December 31st of the given year. This is
+    also stated in your welcome packet as well as on the back of your Club CoasterFusion Membership Card.
+    </p>
+    <p><span style="color: DarkOrange;"><strong>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</strong></span>
+    </p>
+    <p>
+    Club CoasterFusion has the right to suspend or ban club member(s) who have been found guilty of violating these Codes of Conduct. If banned Club CoasterFusion will request Membership Card.
+    If suspended Club CoasterFusion will notify each theme park of members name and ID number. If suspended or banned member is stripped of all benefits.
+    </p>
+    </div>
+     </div>
+     <p style="text-indent: 10px"><span style="text-decoration:underline;"><strong>Club Membership Options:</strong></span></p>
+     </div>
+     <!-- /content -->
+     
+     <!-- footer -->
+        <div data-role="footer" class="footer">
+        <!-- navbar -->
+      <div data-role="navbar" class="cffooter" data-grid="d">
+       <ul>
+        <li><a href="#mainPage" id="news" data-transition="none" data-icon="custom">News</a></li>
+        <li><a href="#" id="clubcf" data-transition="none" data-icon="custom" class="ui-state-persist">Club Info</a></li>
+        <li><a href="#aboutus" id="about" data-transition="none" data-icon="custom">About</a></li>
+        <li><a href="#contactus" id="contact" data-transition="none" data-icon="custom">Contact Us</a></li>
+        <li><a href="#morepage" id="more" data-transition="none" data-icon="custom">More</a></li>
+       </ul>
+       </div><!-- /navbar -->
+       </div><!-- /footer -->
+       
+     </div>
+     <!-- /page -->
+     
+     <!-- page -->
+     <div id="aboutus" data-role="page">
+     
+     <!-- Header -->
+     <div id="club" data-role="header" class="header">
+     <img src="img/cftopheader.png" class="ui-btn-left" />
+         <h1></h1>
+         <h1></h1>
+     </div>
+     <!-- /header -->
+     
+     <!-- content -->
+     <div data-role="content" class="content">
+     <div id="player">
+        </div>
+     </div>
+     <!-- /content -->
+     
+      <!-- footer -->
+        <div data-role="footer" class="footer">
+        <!-- navbar -->
+      <div data-role="navbar" class="cffooter" data-grid="d">
+       <ul>
+        <li><a href="#mainPage" id="news" data-transition="none" data-icon="custom">News</a></li>
+        <li><a href="#club" id="clubcf" data-transition="none" data-icon="custom">Club Info</a></li>
+        <li><a href="#" id="about" data-transition="none" data-icon="custom" class="ui-state-persist">About</a></li>
+        <li><a href="#contactus" id="contact" data-transition="none" data-icon="custom">Contact Us</a></li>
+        <li><a href="#morepage" id="more" data-transition="none" data-icon="custom">More</a></li>
+       </ul>
+       </div><!-- /navbar -->
+       </div><!-- /footer -->
+       
+       <script src="js/youtube.js"></script>
+     
+     </div>
+     <!-- /page -->
+     
+     <!-- page -->
+     <div id="contactus" data-role="page">
+     
+     <!-- Header -->
+     <div id="club" data-role="header" class="header">
+     <img src="img/cftopheader.png" class="ui-btn-left" />
+         <h1></h1>
+         <h1></h1>
+     </div>
+     <!-- /header -->
+     
+     <!-- content -->
+     <div data-role="content" class="content">
+     </div>
+     <!-- /content -->
+     
+      <!-- footer -->
+      <div data-role="footer" class="footer">
+      <!-- navbar -->
+      <div data-role="navbar" class="cffooter" data-grid="d">
+      <ul>
+      <li><a href="#mainPage" id="news" data-transition="none" data-icon="custom">News</a></li>
+      <li><a href="#club" id="clubcf" data-transition="none" data-icon="custom">Club Info</a></li>
+      <li><a href="#aboutus" id="about" data-transition="none" data-icon="custom">About</a></li>
+      <li><a href="#" id="contact" data-transition="none" data-icon="custom" class="ui-state-persist">Contact Us</a></li>
+      <li><a href="#morepage" id="more" data-transition="none" data-icon="custom">More</a></li>
+     </ul>
+    </div><!-- /navbar -->
+   </div><!-- /footer -->
+     
+ </div>
+ <!-- /page -->
+ 
+ <!-- page -->
+     <div id="morepage" data-role="page">
+     
+     <!-- Header -->
+     <div id="club" data-role="header" class="header">
+     <img src="img/cftopheader.png" class="ui-btn-left" />
+         <h1></h1>
+         <h1></h1>
+     </div>
+     <!-- /header -->
+     
+     <!-- content -->
+     <div data-role="content" class="content">
+     </div>
+     <!-- /content -->
+     
+      <!-- footer -->
+      <div data-role="footer" class="footer">
+      <!-- navbar -->
+      <div data-role="navbar" class="cffooter" data-grid="d">
+      <ul>
+      <li><a href="#mainPage" id="news" data-transition="none" data-icon="custom">News</a></li>
+      <li><a href="#club" id="clubcf" data-transition="none" data-icon="custom">Club Info</a></li>
+      <li><a href="#aboutus" id="about" data-transition="none" data-icon="custom">About</a></li>
+      <li><a href="#contactus" id="contact" data-transition="none" data-icon="custom">Contact Us</a></li>
+      <li><a href="#" id="more" data-transition="none" data-icon="custom" class="ui-state-persist">More</a></li>
+     </ul>
+    </div><!-- /navbar -->
+   </div><!-- /footer -->
+     
+ </div>
+ <!-- /page -->
+     
+    </body>
+</html>
